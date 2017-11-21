@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 Corporate Site Style Sheet
 Author: GRADUS;
@@ -41,7 +42,7 @@ html {
 body {
 	color: #5b5b5b;
 	font-size: 1.6rem;
-	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Noto Sans Japanese, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Avenir,sans-serif;
 	smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -418,21 +419,49 @@ nav.header-menu.drawer-nav {
 
 /* Catch-copy Area */
 .copy-container {
-	color: #e5ff29;
+	width: 52%;
+	padding: 10px;
+	color: #51cbfd;
+	background: rgba(255,255,255,.9);
 	text-align: center;
+	-webkit-transform: skewY(-11deg);
+	-ms-transform: skewY(-11deg);
+	transform: skewY(-11deg);
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
 }
 .catchcopy {
-	margin: 0;
-	font-weight: normal;
+	margin: 0 0 10px;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 1.4;
+	
 }
 .leadcopy {
-	font-size: 2rem;
+	font-size: 1.4rem;
 	font-weight: normal;
+}
+.catchcopy,
+.leadcopy {
+	word-break: keep-all;
+}
+
+@media screen and (max-width: 900px) {
+	.copy-container {
+		width: 65%;
+	}
+	.catchcopy {
+		font-size: 4rem;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	.copy-container {
 		width: 90%;
+	}
+	.catchcopy {
+		font-size: 3.2rem;
 	}
 	.catchcopy img {
 		width: 100%;
