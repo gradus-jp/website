@@ -419,27 +419,15 @@ nav.header-menu.drawer-nav {
 
 /* Catch-copy Area */
 .copy-container {
-	width: 52%;
-	padding: 10px;
-	color: #51cbfd;
-	background: rgba(255,255,255,.9);
+	margin-top: -50px;
 	text-align: center;
-	-webkit-transform: skewY(-11deg);
-	-ms-transform: skewY(-11deg);
-	transform: skewY(-11deg);
-	-webkit-transform-origin: top left;
-	-ms-transform-origin: top left;
-	transform-origin: top left;
+	color: #fff;
 }
 .catchcopy {
-	margin: 0 0 10px;
-	font-size: 5.5rem;
-	font-weight: bold;
-	line-height: 1.4;
-	
+	margin: 0;
 }
 .leadcopy {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: normal;
 }
 .catchcopy,
@@ -447,21 +435,10 @@ nav.header-menu.drawer-nav {
 	word-break: keep-all;
 }
 
-@media screen and (max-width: 900px) {
-	.copy-container {
-		width: 65%;
-	}
-	.catchcopy {
-		font-size: 4rem;
-	}
-}
-
 @media screen and (max-width: 600px) {
 	.copy-container {
 		width: 90%;
-	}
-	.catchcopy {
-		font-size: 3.2rem;
+		margin-top: 0;
 	}
 	.catchcopy img {
 		width: 100%;
