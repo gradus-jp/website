@@ -33,8 +33,6 @@ Author: GRADUS;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-wrap: break-word;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 html {
 	font-size: 62.5%;
