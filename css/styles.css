@@ -38,17 +38,17 @@ html {
 	font-size: 62.5%;
 }
 body {
-	color: #5b5b5b;
+	color:#5b5b5b;
 	font-size: 1.6rem;
 	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Avenir,sans-serif;
 	smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: 1.6;
-	background-color:  #f7f7f9;
+	background-color: #f7f7f9;
 }
 h2 { margin: 0; }
-ul,ol { 
+ul,ol {
 	list-style:none;
 	margin: 0;
 	padding: 0;
@@ -141,11 +141,12 @@ object {
 	display: block;
 	content: "";
     width: 60px;
-    height: 4px; 
+    height: 4px;
     margin: 4px auto 0;
     background: #5b5b5b;
 }
-.content-ttl.txt_rev_color span::after { background: #fff; }
+
+.content-ttl.txt_rev_color span::after { background: #5b5b5b; }
 
 @media screen and (max-width: 768px) {
 	.content-ttl {
@@ -177,7 +178,7 @@ object {
 	display: inline-block;
 	padding: 0.8em 3em;
 	border: 2px solid #fff;
-	background: #51cbfd;
+	background:#ffab24;
 	color: #fff;
 	font-size: 1.8rem;
 	text-decoration: none;
@@ -185,13 +186,12 @@ object {
 	transition-property: all;
   	transition: 0.2s linear;
 }
-.btn-primary.border-blue {
-	border-color: #51cbfd;
+#services .btn-primary {
+	border-color: #ffab24;
 }
 .btn-primary:hover {
-	border: 2px solid #5b5b5b;
-	background: #e5ff29;
-	color: #5b5b5b;
+	border:2px solid #333;
+	background:#de4b6d;
 }
 
 @media screen and (max-width: 600px) {
@@ -241,7 +241,7 @@ object {
 	margin-left: 0;
 }
 .header-menu-item a {
-	color: #fff;
+	color:#5b5b5b;
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-decoration: none;
@@ -255,13 +255,13 @@ object {
 	width: 30px;
 	height: 3px;
 	margin: auto;
-	background: #e5ff29;
+	background:#de4b6d;
 	opacity: 0;
 	transition-property: all;
   	transition: 0.2s linear;
 }
 .header-menu-item a:hover {
-	color: #e5ff29;
+	color:#de4b6d;
 }
 .header-menu-item a:hover::after {
 	opacity: 1;
@@ -303,7 +303,7 @@ nav.header-menu.drawer-nav {
 		position: fixed;
 		width: 16.25rem;
 		margin-top: 0;
-		background: #51cbfd;
+		background: #f7f7f9;
 	}
 	.header-menu {
 		height: 100%;
@@ -319,7 +319,7 @@ nav.header-menu.drawer-nav {
 	.drawer-hamburger-icon,
 	.drawer-hamburger-icon::after,
 	.drawer-hamburger-icon::before {
-		background-color: #fff !important;
+		background-color: #5b5b5b !important;
 	}
 	.drawer-open .drawer-hamburger-icon {
 		background-color: transparent !important;
@@ -329,12 +329,11 @@ nav.header-menu.drawer-nav {
 /* Background
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Color */
-.bg-color-blue { background-color: #51cbfd; }
-.bg-color-blueSky { background-color: #88e3ff; }
+.bg-color { background-color: #ffab24; }
 
 /* Pattern */
 .bg-geometoric {
-	background: url('../images/pt_geometric.png') repeat #51cbfd;
+	background: url('../images/pt_geometric.png?20160812') repeat #ffab24;
 }
 
 /* Oblique Background
@@ -361,8 +360,8 @@ nav.header-menu.drawer-nav {
     transform: rotate(-11deg);
 }
 /* BG Color */
-#about .bg-oblique-inner::before { background-color: #51cbfd; }/*About Area*/
-#company .bg-oblique-inner::before { background-color: #88e3ff; }/*Company Area*/
+#about .bg-oblique-inner::before,
+#company .bg-oblique-inner::before { background-color: #ffab24; }
 #company .bg-oblique-inner { z-index: -1; }/*Company Area*/
 
 /* h2のポジション調整 */
@@ -410,7 +409,7 @@ nav.header-menu.drawer-nav {
 	width: 100vw;
 	height: auto;
 	min-height: 90vh;
-	background-image: url('../images/eyecatch.jpg');
+	background-image: url('../images/eyecatch.png');
 	background-size: cover;
   	background-position: center;
 }
@@ -420,6 +419,11 @@ nav.header-menu.drawer-nav {
 	margin-top: -130px;
 	text-align: center;
 	color: #fff;
+	background: rgba(222,75,109,0.8);
+	background: -webkit-linear-gradient(left, rgba(222,75,109,0.8),rgba(255,171,36,0.8));
+	background: linear-gradient(right, rgba(222,75,109,0.8),rgba(255,171,36,0.8));
+	border-radius: 80px 0;
+	padding: 2rem;
 }
 .catchcopy {
 	margin: 0;
@@ -427,6 +431,7 @@ nav.header-menu.drawer-nav {
 .leadcopy {
 	font-size: 1.8rem;
 	font-weight: normal;
+	margin-bottom: 32px;
 }
 .catchcopy,
 .leadcopy {
@@ -462,6 +467,10 @@ nav.header-menu.drawer-nav {
 	margin: 0 auto 1em;
 	text-align: center;
 	line-height: 1.9;
+}
+
+#about .content-ttl{
+	color:#5b5b5b;
 }
 
 /* Services Area
@@ -538,7 +547,7 @@ nav.header-menu.drawer-nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Title */
 .services-ttl_other {
-	color: #51cbfd;
+	color:#ffab24;
 	font-size: 3.6rem;
 	font-family: arial;
 	font-weight: normal;
@@ -635,8 +644,8 @@ nav.header-menu.drawer-nav {
 .company-info th,
 .company-info td {
 	padding: 1em;
-	background: rgba(249, 252, 253, 0.24);
-	border: 3px solid #88e3ff;
+	background: rgba(249, 252, 253, 0.46);
+	border: 3px solid #ffab24;
 }
 
 @media screen and (max-width: 768px) {
@@ -704,8 +713,8 @@ nav.header-menu.drawer-nav {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-	background: #e5ff29;
-	color: #5b5b5b;
+	background:#de4b6d;
+	color: #ffffff;
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-align: center;
@@ -730,8 +739,8 @@ nav.header-menu.drawer-nav {
     width: 4px;
     height: 4px;
     border: 0px;
-    border-top: solid 2px #5b5b5b;
-    border-right: solid 2px #5b5b5b;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -795,8 +804,8 @@ nav.header-menu.drawer-nav {
 .l-footer-inner {
 	width: 100%;
 	padding: 0 0 1em;
-	background: #88e3ff;
-	color: #808080;
+	background: #ffab24;
+	color: #5b5b5b;
 	text-align: center;
 }
 .copyright {
@@ -804,7 +813,7 @@ nav.header-menu.drawer-nav {
 }
 /* Utility */
 .utility-list a {
-	color: #808080;
+	color: #5b5b5b;
 	font-size: 1.2rem;
 }
 /*Footer Area BG 斜め背景交差*/
@@ -820,11 +829,11 @@ nav.header-menu.drawer-nav {
     height: 830px;
     transform-origin: 0 0;
     transform: rotate(3deg);
-    background: url('../images/pt_geometric.png') repeat #51cbfd;
+    background: url('../images/pt_geometric.png?20160812') repeat #ffab24;
     z-index: -2;
 }
 .l-footer .bg-oblique-inner { z-index: -1; }
-.l-footer .bg-oblique-inner::before { background-color: #88e3ff; }
+.l-footer .bg-oblique-inner::before { background-color: #ffab24; }
 
 @media screen and (max-width: 600px) {
 	.l-footer {
