@@ -808,13 +808,27 @@ nav.header-menu.drawer-nav {
 	color: #5b5b5b;
 	text-align: center;
 }
+.lang {
+	margin-bottom: 1em;
+}
+.lang li {
+	display: inline-block;
+	font-size: 1.4rem;
+}
+.lang li a {
+	color: #5b5b5b;
+}
+.lang li:not(:last-child)::after {
+	content: '|';
+	padding: 0 4px 0 8px;
+}
 .copyright {
 	font-size: 1.4rem;
 }
 /* Utility */
 .utility-list a {
 	color: #5b5b5b;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 /*Footer Area BG 斜め背景交差*/
 .l-footer .bg-oblique-inner::before {
