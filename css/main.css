@@ -1070,7 +1070,7 @@ padding-top: 40px;
   padding: 154px 0;
   background-image: url("../images/bg_cafe2.jpg");
   background-position: top center;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -1098,7 +1098,7 @@ padding-top: 40px;
   height: 100vh;
   background-image: url("../images/osaka_landscape.png");
   background-position: top center;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -1490,7 +1490,7 @@ padding-top: 40px;
   height: 100%;
   text-align: center;
   background-position: top;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size: 50%;
   background-repeat: no-repeat;
   justify-content: center;
