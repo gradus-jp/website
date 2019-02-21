@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^https://gradus.jp/en/$ https://gradus.jp/ [R=302,L]
+</IfModule>
